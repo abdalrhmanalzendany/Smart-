@@ -1,0 +1,68 @@
+name: smart_access_app
+description: تطبيق الوصول الذكي للمكفوفين - Smart Access App for the Blind
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI Components
+  cupertino_icons: ^1.0.2
+  
+  # Speech Recognition and TTS
+  speech_to_text: ^6.3.0
+  flutter_tts: ^3.8.3
+  
+  # Permissions
+  permission_handler: ^11.0.1
+  
+  # Location and Maps
+  geolocator: ^10.1.0
+  geocoding: ^2.1.1
+  
+  # Contacts
+  contacts_service: ^0.6.3
+  
+  # Phone calls
+  url_launcher: ^6.2.1
+  
+  # HTTP requests
+  http: ^1.1.0
+  
+  # Local storage
+  shared_preferences: ^2.2.2
+  sqflite: ^2.3.0
+  
+  # State management
+  provider: ^6.1.1
+  
+  # Accessibility
+  flutter_accessibility_service: ^0.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/audio/
+    - assets/data/
+  
+  fonts:
+    - family: NotoSansArabic
+      fonts:
+        - asset: assets/fonts/NotoSansArabic-Regular.ttf
+        - asset: assets/fonts/NotoSansArabic-Bold.ttf
+          weight: 700
+
